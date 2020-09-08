@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BorewellFormActivity">
+
+    <EditText
+        android:id="@+id/vol_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Volunteer Name"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="206dp" />
+
+    <TextView
+        android:id="@+id/wdata"
+        android:layout_width="216dp"
+        android:layout_height="64dp"
+        android:text="Add Well Data"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="25dp" />
+
+    <EditText
+        android:id="@+id/w_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Borewell Code"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="89dp" />
+
+    <EditText
+        android:id="@+id/w_owner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Owners Name"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="147dp" />
+
+    <EditText
+        android:id="@+id/w_add"
+        android:layout_width="210dp"
+        android:layout_height="85dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textPostalAddress"
+        android:hint="Address"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="264dp" />
+
+    <EditText
+        android:id="@+id/w_elevation"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Elevation"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="368dp" />
+
+    <EditText
+        android:id="@+id/w_depth"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Depth"
+        tools:layout_editor_absoluteX="216dp"
+        tools:layout_editor_absoluteY="368dp" />
+
+
+    <RadioButton
+        android:id="@+id/w_others"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Others"
+        tools:layout_editor_absoluteX="279dp"
+        tools:layout_editor_absoluteY="475dp" />
+
+    <RadioButton
+        android:id="@+id/w_agri"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="Agriculture"
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="475dp" />
+
+    <RadioButton
+        android:id="@+id/w_dome"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Domestic"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="475dp" />
+
+
+    <TextView
+        android:id="@+id/wpurpose"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Purpose"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="438dp" />
+
+    <TextView
+        android:id="@+id/wownership"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:text="Ownership"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="538dp" />
+
+    <RadioButton
+        android:id="@+id/w_public"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Public"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="574dp" />
+
+    <RadioButton
+        android:id="@+id/w_private"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Private"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="574dp" />
+
+    <RadioButton
+        android:id="@+id/w_shared"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Shared"
+        tools:layout_editor_absoluteX="279dp"
+        tools:layout_editor_absoluteY="574dp" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="652dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

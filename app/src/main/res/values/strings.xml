@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">mahabhujal</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Mahabhujal</string>
+    <string name="nav_header_subtitle">help@mahabhuja.in</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_map">Home</string>
+    <string name="menu_dashboard">Dashboard</string>
+    <string name="menu_demand_analysis">Demand Analysis</string>
+    <string name="menu_alerts">Alerts</string>
+
+    <string name="menu_borewell">Borewell</string>
+    <string name="menu_well">Well</string>
+    <string name="menu_recharge_structure">Recharge Structure</string>
+    <string name="menu_rainfall">Rainfall</string>
+    <string name="menu_water_quality">Water Quality</string>
+
+    <string name="menu_logout">Logout</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!-- Buttons: Borewells -->
+
+    <string name="btn_registerborewell">Register Borewell</string>
+    <string name="btn_waterstructlevel">Water Struct Level</string>
+    <string name="btn_waterquality">Water Quality</string>
+    <string name="btn_waterlevel">Water Level</string>
+    <string name="btn_borewellsection">Borewell Section</string>
+    <string name="btn_pumpinghrs">Pumping Hrs</string>
+
+    <!-- Buttons: wells -->
+
+    <string name="btn_registerwell">Register Well</string>
+    <string name="btn_wellwaterstructlevel">Water Struct Level</string>
+    <string name="btn_wellwaterquality">Well Water Quality</string>
+    <string name="btn_wellwaterlevel">Well Water Level</string>
+    <string name="btn_wellsection">Well Section</string>
+    <string name="btn_wellpumpinghrs">Pumping Hrs</string>
+    <string name="wellbtn_wellpumpingtest">Pumping Test</string>
+
+    <!-- Buttons: Recharge Structures  -->
+    <string name="btn_addrechargestructure">Add Recharge Structure </string>
+    <string name="btn_calculatevolume">Calculate Recharge Volume</string>
+
+    <!-- Buttons: Rain Fall  -->
+    <string name="btn_addrainfall">Add Rain Data </string>
+    <string name="btn_addrainstation">Add Rain Station </string>
+
+    <string name="btn_addwaterqualty">Add Water Quality Data  </string>
+
+
+    <string name="dash">-</string>
+    <!-- Buttons: Borewell Form -->
+    <string name="b_others">Others</string>
+    <string name="b_agri">Agriculture</string>
+    <string name="b_domestic">Domestic</string>
+    <string name="b_public">Public</string>
+    <string name="b_private">Private</string>
+    <string name="b_share">Shared</string>
+    <string name="b_code">borewell code</string>
+    <string name="b_owner">Borewell owner name</string>
+    <string name="b_depth">Borewell Depth</string>
+    <string name="b_elevation">Borewell elevation</string>
+
+
+    <!-- Buttons: Well Form -->
+    <string name="w_others">Others</string>
+    <string name="w_agri">Agriculture</string>
+    <string name="w_domestic">Domestic</string>
+    <string name="w_public">Public</string>
+    <string name="w_private">Private</string>
+    <string name="w_share">Shared</string>
+    <string name="submit">Submit</string>
+    <string name="vol_name">Volunteer Name</string>
+    <string name="w_code">Well code</string>
+    <string name="w_owner">Well owner name</string>
+    <string name="w_depth">Well Depth</string>
+    <string name="w_elevation">Well elevation</string>
+    <string name="add_borewell_data">Add Borewell Data</string>
+
+
+</resources>

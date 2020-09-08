@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_foreground"
+            android:title="@string/menu_map" />
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_dashboard_foreground"
+            android:title="@string/menu_dashboard" />
+        <item
+            android:id="@+id/nav_demand_analysis"
+            android:icon="@drawable/ic_demand_foreground"
+            android:title="@string/menu_demand_analysis" />
+        <item
+            android:id="@+id/nav_alerts"
+            android:icon="@drawable/ic_alerts_foreground"
+            android:title="@string/menu_alerts" />
+        <item
+            android:id="@+id/nav_borewell"
+            android:icon="@drawable/ic_add_foreground"
+            android:title="@string/menu_borewell" />
+        <item
+            android:id="@+id/nav_well"
+            android:icon="@drawable/ic_add_foreground"
+            android:title="@string/menu_well" />
+        <item
+            android:id="@+id/nav_recharge_structure"
+            android:icon="@drawable/ic_add_foreground"
+            android:title="@string/menu_recharge_structure" />
+        <item
+            android:id="@+id/nav_rainfall"
+            android:icon="@drawable/ic_add_foreground"
+            android:title="@string/menu_rainfall" />
+        <item
+            android:id="@+id/nav_water_quality"
+            android:icon="@drawable/ic_add_foreground"
+            android:title="@string/menu_water_quality" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout_foreground"
+            android:title="@string/menu_logout" />
+    </group>
+</menu>

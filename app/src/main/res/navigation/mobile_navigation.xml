@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="in.mahabhujal.mahabhujal.ui.home.HomeFragment"
+        android:label="@string/menu_map"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_dashboard"
+        android:name="in.mahabhujal.mahabhujal.ui.dashboard.dashboardFragment"
+        android:label="@string/menu_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/nav_demand_analysis"
+        android:name="in.mahabhujal.mahabhujal.ui.demandAnalysis.demandAnalysisFragment"
+        android:label="@string/menu_demand_analysis"
+        tools:layout="@layout/fragment_demand_analysis" />
+
+    <fragment
+        android:id="@+id/nav_alerts"
+        android:name="in.mahabhujal.mahabhujal.ui.alerts.alertsFragment"
+        android:label="@string/menu_alerts"
+        tools:layout="@layout/fragment_alerts" />
+
+    <fragment
+        android:id="@+id/nav_borewell"
+        android:name="in.mahabhujal.mahabhujal.ui.borewell.borewellFragment"
+        android:label="@string/menu_borewell"
+        tools:layout="@layout/fragment_borewell" />
+
+    <fragment
+        android:id="@+id/nav_well"
+        android:name="in.mahabhujal.mahabhujal.ui.well.wellFragment"
+        android:label="@string/menu_well"
+        tools:layout="@layout/fragment_well" />
+
+    <fragment
+        android:id="@+id/nav_recharge_structure"
+        android:name="in.mahabhujal.mahabhujal.ui.rechargeStructure.rechargeStructureFragment"
+        android:label="@string/menu_recharge_structure"
+        tools:layout="@layout/fragment_recharge_structure" />
+
+    <fragment
+        android:id="@+id/nav_rainfall"
+        android:name="in.mahabhujal.mahabhujal.ui.rainfall.rainfallFragment"
+        android:label="@string/menu_rainfall"
+        tools:layout="@layout/fragment_rainfall" />
+
+    <fragment
+        android:id="@+id/nav_water_quality"
+        android:name="in.mahabhujal.mahabhujal.ui.waterQuality.WaterQualtyFragment"
+        android:label="@string/menu_water_quality"
+        tools:layout="@layout/fragment_water_qualty" />
+
+       <fragment
+        android:id="@+id/nav_well_form"
+        android:name="in.mahabhujal.mahabhujal.ui.wellForm.wellFormFragment"
+        android:label="Well Form"
+        tools:layout="@layout/fragment_well" />
+
+    <fragment
+        android:id="@+id/nav_borewell_form"
+        android:name="in.mahabhujal.mahabhujal.ui.borewellForm"
+        android:label="Well Form"
+        tools:layout="@layout/fragment_well" />
+
+</navigation>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.borewellForm.borewellFormFragment">
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="206dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="216dp"
+        android:layout_height="64dp"
+        android:text="Add Borewell Data"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="25dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Borewell Code"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="89dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Owners Name"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="147dp" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="210dp"
+        android:layout_height="85dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textPostalAddress"
+        android:text="Address"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="264dp" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Elevation"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="368dp" />
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Depth"
+        tools:layout_editor_absoluteX="216dp"
+        tools:layout_editor_absoluteY="368dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Others"
+        tools:layout_editor_absoluteX="279dp"
+        tools:layout_editor_absoluteY="475dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="Agriculture"
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="475dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton3"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Domestic"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="475dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Purpose"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="438dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:text="Ownership"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="538dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton7"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Public"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="574dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton8"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Private"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="574dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton9"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Shared"
+        tools:layout_editor_absoluteX="279dp"
+        tools:layout_editor_absoluteY="574dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="652dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

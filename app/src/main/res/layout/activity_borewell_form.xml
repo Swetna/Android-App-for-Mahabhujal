@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BorewellFormActivity">
+
+    <EditText
+        android:id="@+id/vol_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Volunteer Name"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="206dp" />
+
+    <TextView
+        android:id="@+id/bdata"
+        android:layout_width="217dp"
+        android:layout_height="40dp"
+        android:text="Add Borewell Data"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="25dp" />
+
+    <EditText
+        android:id="@+id/b_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Borewell Code"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="89dp" />
+
+    <EditText
+        android:id="@+id/b_owner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Owners Name"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="147dp" />
+
+    <EditText
+        android:id="@+id/b_add"
+        android:layout_width="210dp"
+        android:layout_height="85dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textPostalAddress"
+        android:hint="Address"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="264dp" />
+
+    <EditText
+        android:id="@+id/b_elevation"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Elevation"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="368dp" />
+
+    <EditText
+        android:id="@+id/b_depth"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Depth"
+        tools:layout_editor_absoluteX="216dp"
+        tools:layout_editor_absoluteY="368dp" />
+
+
+    <TextView
+        android:id="@+id/bpurpose"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Purpose"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="438dp" />
+
+    <TextView
+        android:id="@+id/bownership"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:text="Ownership"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="538dp" />
+
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="652dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    </RadioGroup>
+
+    <RadioButton
+        android:id="@+id/b_others"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Others"
+        tools:layout_editor_absoluteX="267dp"
+        tools:layout_editor_absoluteY="481dp" />
+
+    <RadioButton
+        android:id="@+id/b_public"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Public"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="585dp" />
+
+    <RadioButton
+        android:id="@+id/b_shared"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Shared"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.373"
+        app:layout_constraintStart_toEndOf="@+id/b_public"
+        tools:layout_editor_absoluteY="585dp" />
+
+    <RadioButton
+        android:id="@+id/b_private"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="292dp"
+        android:layout_marginRight="292dp"
+        android:text="Private"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="585dp" />
+
+    <RadioButton
+        android:id="@+id/b_agri"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="Agriculture"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="481dp" />
+
+    <RadioButton
+        android:id="@+id/b_dome"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="119dp"
+        android:layout_marginLeft="119dp"
+        android:text="Domestic"
+        app:layout_constraintEnd_toStartOf="@+id/b_others"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toStartOf="@+id/b_agri"
+        tools:layout_editor_absoluteY="481dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
