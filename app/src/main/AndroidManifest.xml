@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="in.mahabhujal.mahabhujal">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
 
     <application
         android:allowBackup="true"
@@ -9,15 +25,36 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".CalculateNeed"></activity>
+        <activity android:name=".CalculateVolume" />
+        <activity android:name=".CalculateRecharge" />
+        <activity android:name=".RechargeVolume" />
+        <activity android:name=".WaterQualityMain" />
+        <activity android:name=".WaterQualityData" />
+        <activity android:name=".WellPumpTest" />
+        <activity android:name=".RainStationData" />
+        <activity android:name=".RainfallDataAdd" />
+        <activity android:name=".RainfallMain" />
+        <activity android:name=".BorewellPumpHrs" />
+        <activity android:name=".BorewellSection" />
+        <activity android:name=".BorewellLevel" />
+        <activity android:name=".WellPumpHrs" />
+        <activity android:name=".WellSection" />
+        <activity android:name=".WellWaterLevel" />
+        <activity android:name=".BorewellMain" />
+        <activity android:name=".BorewellStruct" />
+        <activity android:name=".WellStruct" />
+        <activity android:name=".WellMain" />
+        <activity android:name=".MainLogin" />
+        <activity android:name=".ui.AddStructFragment" />
+        <activity android:name=".BorewellFormActivity" />
         <activity
-            android:name=".BorewellActivity"
-            android:label="@string/app_name">
-        </activity>
-        <activity android:name=".WellActivity"
-            android:label="@string/app_name"></activity>
-        <activity android:name=".BorewellFormActivity" android:label="@string/app_name"></activity>
-        <activity android:name=".WellFormActivity"
-            android:label="@string/app_name"></activity>
+            android:name=".WellFormActivity"
+            android:label="@string/app_name" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
 
         <activity
             android:name=".MainActivity"

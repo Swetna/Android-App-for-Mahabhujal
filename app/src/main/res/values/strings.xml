@@ -32,6 +32,7 @@
     <string name="btn_waterlevel">Water Level</string>
     <string name="btn_borewellsection">Borewell Section</string>
     <string name="btn_pumpinghrs">Pumping Hrs</string>
+    <string name="add_borewell_data">Add Borewell Data</string>
 
     <!-- Buttons: wells -->
 
@@ -62,10 +63,13 @@
     <string name="b_public">Public</string>
     <string name="b_private">Private</string>
     <string name="b_share">Shared</string>
-    <string name="b_code">borewell code</string>
+    <string name="b_code">Borewell code</string>
     <string name="b_owner">Borewell owner name</string>
     <string name="b_depth">Borewell Depth</string>
     <string name="b_elevation">Borewell elevation</string>
+    <string name="b_purpose">Purpose</string>
+    <string name="b_own_type">Ownership</string>
+    <string name="b_address">Address</string>
 
 
     <!-- Buttons: Well Form -->
@@ -81,7 +85,159 @@
     <string name="w_owner">Well owner name</string>
     <string name="w_depth">Well Depth</string>
     <string name="w_elevation">Well elevation</string>
-    <string name="add_borewell_data">Add Borewell Data</string>
+    <string name="w_add_data">Add Well Data</string>
+    <string name="Public">Public</string>
+    <string name="w_purpose">Purpose</string>
+    <string name="w_owner_type">Ownership</string>
+    <string name="w_address">Address</string>
+
+
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="password">Password</string>
+    <string name="email_address">Email address</string>
+    <string name="login_now">Login Now</string>
+    <string name="don_t_remember_password">Don\'t Remember password?</string>
+    <string name="dont_have_an_account">Don\'t have an account?</string>
+    <string name="sign_in_with_facebook">Sign in with Facebook</string>
+    <string name="sign_in_google">Sign in with Google</string>
+    <string name="or">or</string>
+    <string name="menu_login">Login</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="id_here">ID: ID HERE</string>
+    <string name="name_here">Name: NAME HERE</string>
+    <string name="email_here">Email: EMAIL HERE</string>
+    <string name="add_img">Add Image here</string>
+    <string name="check_map">Click icon to check location on map</string>
+
+
+    <string name="map_key" translatable="false"> AIzaSyB_qsP8AOP_P0MdlPz-48TDaJYjTP3vbjo</string>
+
+
+    <string name="type_struct">Type Of Structure</string>
+    <string name="Lat">Latitude</string>
+    <string name="Long">Longitude</string>
+    <string name="date_creation">Date Of Creation</string>
+    <string name="Area">Area</string>
+    <string name="struct_add">Add Recharge Structure</string>
+    <string name="struct_level1">Water Struct Level Feet1(Top To Depth)</string>
+    <string name="struct_level2">Water Struct Level 2</string>
+    <string name="struct_level3">Water Struct Level 3</string>
+    <string name="well_variation">Variation</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="water_avaliable">Water Avaliable</string>
+    <string name="water_lts">Amount of Water Avaliable In Liters</string>
+    <string name="pre_monsoon">Pre Monsoon Water level In Liters</string>
+    <string name="post_monsoon">Post Monsoon Water level In Liters</string>
+    <string name="potent">Potentiometric Water level In Liters</string>
+    <string name="date_record">Date Of Recording</string>
+    <string name="summer">In summer</string>
+    <string name="monsoon">In monsoon</string>
+    <string name="winter">In Winter</string>
+    <string name="discharge">Discharge rate per minute</string>
+    <string name="rain_data">Rainfall Data</string>
+    <string name="rainfall_mm">Rainfall in mm</string>
+    <string name="station_id">Station Id</string>
+    <string name="lat">Latitude</string>
+    <string name="longi">Longitude</string>
+    <string name="dates">Date</string>
+    <string name="seasons">Season</string>
+    <string name="crops">Crops</string>
+    <string name="cultivation">Total Area Under Cultivation</string>
+    <string name="water_given">No of times water given</string>
+    <string name="pump_duration">Duration of Pumping</string>
+    <string name="water_use_method">Method used</string>
+    <string name="name_use_method">Drip/Sprinkler/Flood</string>
+
+
+    <string-array name="water_method">
+        <item>Drip</item>
+        <item>Sprinkler</item>
+        <item>Flood</item>
+    </string-array>
+
+
+    <string-array name="seasons">
+        <item>Summer</item>
+        <item>Monsoon</item>
+        <item>Winter</item>
+    </string-array>
+
+
+    <string-array name="watermethod">
+        <item>Borewell</item>
+        <item>Well</item>
+    </string-array>
+
+    <string-array name="requirements">
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+        <item>Yearly</item>
+    </string-array>
+
+
+    <string name="daily_extrat_water">Daily Water extracted</string>
+    <string name="daily_water_number">544444 Liters</string>
+    <string name="week_extrat_water">Weekly Water extracted</string>
+    <string name="week_water_number">21841231 Liters</string>
+    <string name="month_extrat_water">Monthly Water extracted</string>
+    <string name="month_water_number">9131129 Liters</string>
+    <string name="year_extrat_water">Yearly Water extracted</string>
+    <string name="year_water_number">2170171212 Liters</string>
+    <string name="water_per_year">Water needed/Year</string>
+    <string name="water_per_year_number">213189 Liters</string>
+    <string name="remain_gwater">Ground Water remaining</string>
+    <string name="remain_gwater_number">213189 Liters</string>
+    <string name="water_end_date">GroundWater of village will get over with the same extraction rate</string>
+    <string name="water_date_number">01-03-2021</string>
+    <string name="alerts_maha">Alerts from Mahabhujal </string>
+    <string name="alerts_rain">Alerts on Rain </string>
+
+
+    <string name="daily_extrat_demand">DAILY WATER EXTRACTED 544444 Liters</string>
+    <string name="week_extrat_demand">WEEKLY WATER EXTRACTED 21841231 Liters</string>
+    <string name="month_extrat_demand">MONTHLY WATER EXTRACTED 9131129 Liters</string>
+    <string name="year_extrat_demand">YEARLY WATER EXTRACTED 2170171212 Liters</string>
+    <string name="gwater_remains">GROUND WATER REMAINING Approximately 213189 Liters</string>
+    <string name="demand_analysis">Village Demand Analysis </string>
+
+    <string name="well_borewell">Well code/Borewell Code</string>
+    <string name="date_testing">Date of Testing</string>
+    <string name="time_testing">Testing Time</string>
+    <string name="temperature">Temperature</string>
+    <string name="ph">pH level</string>
+    <string name="salinity">Salinity</string>
+    <string name="tds">TDS</string>
+    <string name="ec">EC</string>
+    <string name="water_quality">Water Quality</string>
+
+    <string name="choose_file">Choose File</string>
+    <string name="lab_test">Lab Test Report</string>
+
+
+    <string name="cal_vol">Calculate Volume</string>
+    <string name="cal_need">Calculate Need</string>
+    <string name="catchment">Catchment Area</string>
+    <string name="rain_height">Rainfall Height</string>
+    <string name="water_vol">Water Volume</string>
+    <string name="measure">Unit</string>
+
+    <string name="no_of_people">No of People</string>
+    <string name="daily_water_need">Daily Water Need in LTR/Person Per Day</string>
+    <string name="water_calculate">Water You Need</string>
+
+
+    <string name="but_cal_need">Calculate Need</string>
+    <string name="but_cal_volume">Calculate Volume</string>
 
 
 </resources>

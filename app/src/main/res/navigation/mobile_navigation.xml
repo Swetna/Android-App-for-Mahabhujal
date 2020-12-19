@@ -19,9 +19,9 @@
 
     <fragment
         android:id="@+id/nav_demand_analysis"
-        android:name="in.mahabhujal.mahabhujal.ui.demandAnalysis.demandAnalysisFragment"
+        android:name="in.mahabhujal.mahabhujal.ui.demandAnalysis.NewDemandAnalysis"
         android:label="@string/menu_demand_analysis"
-        tools:layout="@layout/fragment_demand_analysis" />
+        tools:layout="@layout/fragment_new_demand_analysis" />
 
     <fragment
         android:id="@+id/nav_alerts"
@@ -31,15 +31,15 @@
 
     <fragment
         android:id="@+id/nav_borewell"
-        android:name="in.mahabhujal.mahabhujal.ui.borewell.borewellFragment"
+        android:name="in.mahabhujal.mahabhujal.ui.borewell.BorewellFragment"
         android:label="@string/menu_borewell"
-        tools:layout="@layout/fragment_borewell" />
+        tools:layout="@layout/activity_borewell_main" />
 
     <fragment
         android:id="@+id/nav_well"
-        android:name="in.mahabhujal.mahabhujal.ui.well.wellFragment"
+        android:name="in.mahabhujal.mahabhujal.ui.well.WellFragment"
         android:label="@string/menu_well"
-        tools:layout="@layout/fragment_well" />
+        tools:layout="@layout/activity_well_main" />
 
     <fragment
         android:id="@+id/nav_recharge_structure"
@@ -49,26 +49,23 @@
 
     <fragment
         android:id="@+id/nav_rainfall"
-        android:name="in.mahabhujal.mahabhujal.ui.rainfall.rainfallFragment"
+        android:name="in.mahabhujal.mahabhujal.ui.rainfall.RainfallFragment"
         android:label="@string/menu_rainfall"
-        tools:layout="@layout/fragment_rainfall" />
+        tools:layout="@layout/activity_rainfall_main" />
 
     <fragment
         android:id="@+id/nav_water_quality"
-        android:name="in.mahabhujal.mahabhujal.ui.waterQuality.WaterQualtyFragment"
+        android:name="in.mahabhujal.mahabhujal.ui.waterQuality.WaterQualityFragment"
         android:label="@string/menu_water_quality"
         tools:layout="@layout/fragment_water_qualty" />
 
-       <fragment
-        android:id="@+id/nav_well_form"
-        android:name="in.mahabhujal.mahabhujal.ui.wellForm.wellFormFragment"
-        android:label="Well Form"
-        tools:layout="@layout/fragment_well" />
 
-    <fragment
-        android:id="@+id/nav_borewell_form"
-        android:name="in.mahabhujal.mahabhujal.ui.borewellForm"
-        android:label="Well Form"
-        tools:layout="@layout/fragment_well" />
+    <activity
+        android:id="@id/nav_login"
+        android:name="in.mahabhujal.mahabhujal.MainLogin"
+        android:label="@string/menu_login"
+        tools:layout="@layout/activity_main__login"
+        />
+
 
 </navigation>

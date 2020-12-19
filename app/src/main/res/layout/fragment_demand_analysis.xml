@@ -5,12 +5,12 @@
     android:layout_height="match_parent"
     tools:context=".ui.demandAnalysis.demandAnalysisFragment">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:layout_margin="10dp">
+        android:layout_margin="10dp"
+        tools:ignore="UselessParent">
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/card"
@@ -25,7 +25,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="112dp"
                 android:gravity="center"
-                android:text=" Village Demand Analysis  "
+                android:text="@string/demand_analysis"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
         </com.google.android.material.card.MaterialCardView>
@@ -43,7 +43,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="51dp"
                 android:padding="1dp"
-                android:text="DAILY WATER EXTRACTED 544444 Liters "
+                android:text="@string/daily_extrat_demand"
                 android:gravity="center"
                 android:textColor="#000000" />
         </com.google.android.material.card.MaterialCardView>
@@ -61,7 +61,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="51dp"
                 android:padding="1dp"
-                android:text="WEEKLY WATER EXTRACTED 21841231 Liters "
+                android:text="@string/week_extrat_demand"
                 android:gravity="center"
                 android:textColor="#000000" />
         </com.google.android.material.card.MaterialCardView>
@@ -80,7 +80,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="51dp"
                 android:padding="1dp"
-                android:text="MONTHLY WATER EXTRACTED 9131129 Liters"
+                android:text="@string/month_extrat_demand"
                 android:gravity="center"
                 android:textColor="#000000" />
 
@@ -99,7 +99,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="51dp"
                 android:padding="1dp"
-                android:text="YEARLY WATER EXTRACTED 2170171212 Liters"
+                android:text="@string/year_extrat_demand"
                 android:gravity="center"
                 android:textColor="#000000" />
 
@@ -119,7 +119,7 @@
             android:layout_width="match_parent"
             android:layout_height="51dp"
             android:padding="1dp"
-            android:text="GROUND WATER REMAINING Approximately 213189 Liters"
+            android:text="@string/gwater_remains"
             android:gravity="center"
             android:textColor="#000000" />
         </com.google.android.material.card.MaterialCardView>

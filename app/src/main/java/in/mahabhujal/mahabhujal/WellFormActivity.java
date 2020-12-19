@@ -7,6 +7,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.Toast;
 
 public class WellFormActivity extends AppCompatActivity {
 
@@ -36,9 +43,9 @@ public class WellFormActivity extends AppCompatActivity {
         Wpurpose=(TextView) findViewById(R.id.wpurpose);
         Wown=(TextView) findViewById(R.id.wownership);
         W_vol_name=(EditText) findViewById(R.id.vol_name);
-        W_owner_name=(EditText) findViewById(R.id.w_owner);
+       // W_owner_name=(EditText) findViewById(R.id.w_own);
         W_code=(EditText) findViewById(R.id.w_code);
-        W_address=(EditText) findViewById(R.id.w_add);
+       // W_address=(EditText) findViewById(R.id.w_add);
         W_elevation=(EditText) findViewById(R.id.w_elevation);
         W_depth=(EditText) findViewById(R.id.w_depth);
         W_public=(RadioButton) findViewById(R.id.w_public);
@@ -49,5 +56,14 @@ public class WellFormActivity extends AppCompatActivity {
         W_others=(RadioButton) findViewById(R.id.w_others);
         Submit=(Button) findViewById(R.id.submit);
 
+    }
+    public void onRadioButtonClicked(View view) {
+        // Is the button now checked?
+        boolean checked = ((RadioButton) view).isChecked();
+
+        // Check which radio button was clicked
+        switch (view.getId()) {
+
+        }
     }
 }

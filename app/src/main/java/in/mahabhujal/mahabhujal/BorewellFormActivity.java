@@ -1,7 +1,5 @@
 package in.mahabhujal.mahabhujal;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.Button;
@@ -12,21 +10,21 @@ import android.widget.TextView;
 
 public class BorewellFormActivity extends Activity {
 
-private TextView B_data;
-private EditText B_vol_name;
-private EditText B_owner_name;
-private EditText B_code;
-private EditText B_address;
-private EditText B_elevation;
-private EditText B_depth;
-private RadioButton B_public;
-private RadioButton B_private;
-private RadioButton  B_shared;
-private RadioButton  B_agri;
-private RadioButton  B_dome;
-private RadioButton B_others;
-private Button Submit;
-private TextView Bpurpose;
+    private TextView B_data;
+    private EditText B_vol_name;
+    private EditText B_owner_name;
+    private EditText B_code;
+    private EditText B_address;
+    private EditText B_elevation;
+    private EditText B_depth;
+    private RadioButton B_public;
+    private RadioButton B_private;
+    private RadioButton  B_shared;
+    private RadioButton  B_agri;
+    private RadioButton  B_dome;
+    private RadioButton B_others;
+    private Button Submit;
+    private TextView Bpurpose;
     private TextView Bown;
 
 
@@ -55,7 +53,7 @@ private TextView Bpurpose;
 
     }
 
-   //private void valid(String code,String own_name,String vol_name){
-     //   if(code=="1234")
+    //private void valid(String code,String own_name,String vol_name){
+    //   if(code=="1234")
     //}
 }

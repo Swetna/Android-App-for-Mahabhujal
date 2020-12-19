@@ -3,32 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.rainfall.rainfallFragment">
+    tools:context=".ui.rainfall.RainfallFragment">
 
-    <LinearLayout
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:text="@string/hello_blank_fragment" />
 
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="match_parent"
-            android:layout_height="46dp"
-            android:gravity="center"
-            android:text="Rain Fall Data  "
-            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
-
-        <Button
-            android:id="@+id/but_rainfalldata"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/btn_addrainfall" />
-
-        <Button
-            android:id="@+id/btn_addrainstation"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/btn_addrainstation" />
-
-    </LinearLayout>
 </FrameLayout>

@@ -1,21 +1,25 @@
 package in.mahabhujal.mahabhujal.ui.rechargeStructure;
 
+import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
+import androidx.fragment.app.Fragment;
+
+import in.mahabhujal.mahabhujal.CalculateRecharge;
 import in.mahabhujal.mahabhujal.R;
+import in.mahabhujal.mahabhujal.ui.AddStructFragment;
+
 
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link rechargeStructureFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class rechargeStructureFragment extends Fragment {
+public class rechargeStructureFragment extends Fragment implements View.OnClickListener  {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -25,6 +29,7 @@ public class rechargeStructureFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    Button but_add_recharge,cal_volume;
 
     public rechargeStructureFragment() {
         // Required empty public constructor
@@ -57,10 +62,72 @@ public class rechargeStructureFragment extends Fragment {
         }
     }
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_recharge_structure, container, false);
+        View v = inflater.inflate(R.layout.fragment_recharge_structure, container, false);
+        but_add_recharge = (Button) v.findViewById(R.id.but_recharge);
+        but_add_recharge.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), AddStructFragment.class);
+                startActivity(intent);
+            }
+        });
+        cal_volume=(Button) v.findViewById(R.id.cal_volume);
+        cal_volume.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1 = (new Intent(v.getContext(), CalculateRecharge.class));
+                startActivity(intent1);
+            }
+        });
+        return v;
+
+
+
+
+
+        /*
+
+
+    @Override
+    public void onClick(View v){
+
+            Log.i("Nilesh", "success 333");
+            Intent intent = new Intent(getActivity(), AddStructFragment.class);
+            startActivity(intent);
+
+        }
+        /*
+        switch (v.getId()) {
+
+            //case R.id.but_recharge:
+                //Log.i("Nilesh","success 444");
+                //Intent intent = (new Intent(v.getContext(), AddStructFragment.class));
+                //startActivity(intent);
+                //break;
+           case R.id.cal_volume:
+            Log.i("Nilesh","success 444");
+            Intent intent1 = (new Intent(v.getContext(), CalculateRecharge.class));
+            startActivity(intent1);
+            break;
+
+
+        }
+
+         */
+
+
     }
+
+    @Override
+    public void onClick(View v) {
+
+    }
+
+
+
 }

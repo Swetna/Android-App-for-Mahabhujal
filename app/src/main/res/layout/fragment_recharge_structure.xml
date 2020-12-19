@@ -20,13 +20,13 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
         <Button
-            android:id="@+id/but_registerborewell"
+            android:id="@+id/but_recharge"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/btn_addrechargestructure" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/cal_volume"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/btn_calculatevolume" />

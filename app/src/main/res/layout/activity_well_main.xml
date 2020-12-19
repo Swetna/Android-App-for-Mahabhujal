@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WellMain">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:gravity="center"
+            android:text="Add Well Data"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <Button
+            android:id="@+id/but_registerwell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_registerwell"
+            />
+
+        <Button
+            android:id="@+id/w_water_struct_level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_wellwaterstructlevel" />
+
+
+        <Button
+            android:id="@+id/well_water_level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_wellwaterlevel" />
+
+        <Button
+            android:id="@+id/well_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_wellsection" />
+
+        <Button
+            android:id="@+id/pumping_hrs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_wellpumpinghrs" />
+
+        <Button
+            android:id="@+id/pumping_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/wellbtn_wellpumpingtest" />
+    </LinearLayout>
+
+</RelativeLayout>

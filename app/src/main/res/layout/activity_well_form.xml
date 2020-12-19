@@ -1,153 +1,299 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".BorewellFormActivity">
 
-    <EditText
-        android:id="@+id/vol_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="Volunteer Name"
-        tools:layout_editor_absoluteX="77dp"
-        tools:layout_editor_absoluteY="206dp" />
-
-    <TextView
-        android:id="@+id/wdata"
-        android:layout_width="216dp"
-        android:layout_height="64dp"
-        android:text="Add Well Data"
-        tools:layout_editor_absoluteX="77dp"
-        tools:layout_editor_absoluteY="25dp" />
-
-    <EditText
-        android:id="@+id/w_code"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="Borewell Code"
-        tools:layout_editor_absoluteX="77dp"
-        tools:layout_editor_absoluteY="89dp" />
-
-    <EditText
-        android:id="@+id/w_owner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="Owners Name"
-        tools:layout_editor_absoluteX="77dp"
-        tools:layout_editor_absoluteY="147dp" />
-
-    <EditText
-        android:id="@+id/w_add"
-        android:layout_width="210dp"
-        android:layout_height="85dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textPostalAddress"
-        android:hint="Address"
-        tools:layout_editor_absoluteX="77dp"
-        tools:layout_editor_absoluteY="264dp" />
-
-    <EditText
-        android:id="@+id/w_elevation"
-        android:layout_width="155dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="number"
-        android:hint="Elevation"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="368dp" />
-
-    <EditText
-        android:id="@+id/w_depth"
-        android:layout_width="155dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="number"
-        android:hint="Depth"
-        tools:layout_editor_absoluteX="216dp"
-        tools:layout_editor_absoluteY="368dp" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
 
-    <RadioButton
-        android:id="@+id/w_others"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:text="Others"
-        tools:layout_editor_absoluteX="279dp"
-        tools:layout_editor_absoluteY="475dp" />
-
-    <RadioButton
-        android:id="@+id/w_agri"
-        android:layout_width="110dp"
-        android:layout_height="wrap_content"
-        android:text="Agriculture"
-        tools:layout_editor_absoluteX="155dp"
-        tools:layout_editor_absoluteY="475dp" />
-
-    <RadioButton
-        android:id="@+id/w_dome"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:text="Domestic"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="475dp" />
+        <TextView
+            android:id="@+id/wdata"
+            android:layout_width="217dp"
+            android:layout_height="40dp"
+            android:gravity="center_horizontal"
+            android:text="@string/w_add_data"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/w_code"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.074" />
 
 
-    <TextView
-        android:id="@+id/wpurpose"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:text="Purpose"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="438dp" />
+        <EditText
+            android:id="@+id/w_code"
+            android:layout_width="412dp"
+            android:layout_height="59dp"
+            android:ems="10"
+            android:hint="@string/w_code"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.09" />
 
-    <TextView
-        android:id="@+id/wownership"
-        android:layout_width="200dp"
-        android:layout_height="25dp"
-        android:text="Ownership"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="538dp" />
+        <EditText
+            android:id="@+id/b_owner"
+            android:layout_width="410dp"
+            android:layout_height="56dp"
+            android:ems="10"
+            android:hint="@string/w_owner"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/vol_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/w_code"
+            app:layout_constraintVertical_bias="0.349" />
 
-    <RadioButton
-        android:id="@+id/w_public"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:text="Public"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="574dp" />
+        <EditText
+            android:id="@+id/vol_name"
+            android:layout_width="409dp"
+            android:layout_height="52dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/vol_name"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/w_code"
+            app:layout_constraintVertical_bias="0.127" />
 
-    <RadioButton
-        android:id="@+id/w_private"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:text="Private"
-        tools:layout_editor_absoluteX="156dp"
-        tools:layout_editor_absoluteY="574dp" />
+        <EditText
+            android:id="@+id/w_address"
+            android:layout_width="414dp"
+            android:layout_height="87dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/w_address"
+            android:inputType="textPostalAddress"
+            app:layout_constraintBottom_toTopOf="@+id/w_elevation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vol_name"
+            app:layout_constraintVertical_bias="0.282" />
 
-    <RadioButton
-        android:id="@+id/w_shared"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:text="Shared"
-        tools:layout_editor_absoluteX="279dp"
-        tools:layout_editor_absoluteY="574dp" />
 
-    <Button
-        android:id="@+id/submit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Submit"
-        tools:layout_editor_absoluteX="153dp"
-        tools:layout_editor_absoluteY="652dp" />
+        <EditText
+            android:id="@+id/w_elevation"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="139dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/w_elevation"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/w_depth"
+            app:layout_constraintHorizontal_bias="0.629"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vol_name"
+            app:layout_constraintVertical_bias="0.0" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <EditText
+            android:id="@+id/w_depth"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/b_depth"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.816"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/w_address"
+            app:layout_constraintVertical_bias="0.022" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="52dp"
+            android:layout_height="37dp"
+            android:src="@android:drawable/ic_dialog_map"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.194"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/w_elevation"
+            app:layout_constraintVertical_bias="0.068" />
+
+        <TextView
+            android:id="@+id/check_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginLeft="45dp"
+            android:text="@string/check_map"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageButton"
+            app:layout_constraintTop_toBottomOf="@+id/w_depth"
+            app:layout_constraintVertical_bias="0.095" />
+
+        <RadioGroup
+            android:id="@+id/w_rad_purpose"
+            android:layout_width="417dp"
+            android:layout_height="101dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.548"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton"
+            app:layout_constraintVertical_bias="0.225">
+
+            <RadioButton
+                android:id="@+id/w_private"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/w_private"
+                app:layout_constraintBottom_toTopOf="@+id/submit"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.144"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/b_dome"
+                app:layout_constraintVertical_bias="0.739" />
+
+            <RadioButton
+                android:id="@+id/w_public"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/w_public"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/w_dome" />
+
+            <RadioButton
+                android:id="@+id/w_shared"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/w_share"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.853"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/w_others"
+                app:layout_constraintVertical_bias="0.501" />
+
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/wpurpose"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/w_purpose"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/w_rad_purpose"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.459"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton"
+            app:layout_constraintVertical_bias="0.557" />
+
+        <TextView
+            android:id="@+id/wownership"
+            android:layout_width="200dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:text="@string/w_owner_type"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/w_rad_purpose"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <RadioGroup
+            android:id="@+id/w_use"
+            android:layout_width="410dp"
+            android:layout_height="87dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wownership"
+            app:layout_constraintVertical_bias="0.0">
+
+            <RadioButton
+                android:id="@+id/w_dome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/w_domestic" />
+
+            <RadioButton
+                android:id="@+id/w_agri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/w_agri" />
+
+            <RadioButton
+                android:id="@+id/w_others"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/w_others" />
+
+        </RadioGroup>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:src="@drawable/ic_add_symbol_foreground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.261"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wownership"
+            app:layout_constraintVertical_bias="0.677" />
+
+        <TextView
+            android:id="@+id/add_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_img"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.297"
+            app:layout_constraintStart_toEndOf="@+id/floatingActionButton"
+            app:layout_constraintTop_toBottomOf="@+id/w_use"
+            app:layout_constraintVertical_bias="0.126" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/submit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_img"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
