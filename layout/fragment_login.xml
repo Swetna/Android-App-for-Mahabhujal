@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/watersplash"
+    tools:context=".ui.login.LoginFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <Button
+        android:id="@+id/but_login"
+        android:layout_width="409dp"
+        android:layout_height="60dp"
+        android:text="@string/but_login"
+        android:background="#4B000000"
+        android:textColor="@color/ic_fingerprint_background"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.265" />
+
+    <Button
+        android:id="@+id/but_register"
+        android:layout_width="411dp"
+        android:layout_height="55dp"
+        android:text="@string/but_register"
+        android:background="#4B000000"
+        android:textColor="@color/ic_fingerprint_background"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.434" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

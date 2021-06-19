@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/waterdrop"
+    tools:context=".CalculateNeed">
+
+
+
+    <TextView
+        android:id="@+id/no_of_people"
+        android:layout_width="264dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:text="@string/no_of_people"
+        android:textSize="19sp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.193"
+        android:autofillHints=""
+        android:gravity="center_vertical"
+        tools:ignore="RtlCompat" />
+
+
+    <EditText
+        android:id="@+id/no_of_people_number"
+        android:layout_width="147dp"
+        android:layout_height="52dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="numberSigned"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.197"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/daily_need"
+        android:layout_width="264dp"
+        android:layout_height="55dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:text="@string/daily_water_need"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.346"
+        android:gravity="center_vertical"
+        tools:ignore="RtlCompat" />
+
+    <EditText
+        android:id="@+id/daily_need_number"
+        android:layout_width="147dp"
+        android:layout_height="54dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="numberSigned"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.344"
+        tools:ignore="TextFields" />
+
+    <TextView
+        android:id="@+id/water_need_calculated"
+        android:layout_width="264dp"
+        android:layout_height="55dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:text="@string/water_calculate"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.567"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/water_need_calculated_number"
+        android:layout_width="147dp"
+        android:layout_height="54dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.566"
+        tools:ignore="RtlCompat,TextFields" />
+
+    <Button
+        android:id="@+id/but_calculate_need"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/but_cal_need"
+        android:background="#8F0B0A0C"
+        android:textColor="@color/ic_fingerprint_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.78" />
+
+    <Spinner
+        android:id="@+id/spinner_requirements"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.468" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

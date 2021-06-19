@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/watersplash"
+    android:alpha="0.79"
+    tools:context=".ui.alerts.alertsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/alert_maha"
+            android:layout_width="411dp"
+            android:layout_height="58dp"
+            android:gravity="center"
+            android:text="@string/alerts_maha"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/alert_rain"
+            android:layout_width="408dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="68dp"
+            android:gravity="center"
+            android:text="@string/alerts_rain"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintBottom_toTopOf="@+id/daily_extract_water"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/daily_extract_water"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/daily_extrat_water"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            app:layout_constraintBottom_toTopOf="@id/daily_extract_water_number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/alert_rain"
+            />
+
+        <TextView
+            android:id="@+id/daily_extract_water_number"
+            android:layout_width="415dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="12dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:text="@string/daily_water_number"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/weekly_extract_water"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/daily_extract_water"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <TextView
+            android:id="@+id/weekly_extract_water"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_marginTop="28dp"
+            android:text="@string/week_extrat_water"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:gravity="center_horizontal"
+            app:layout_constraintBottom_toTopOf="@id/weekly_extract_water_number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/daily_extract_water_number" />
+
+        <TextView
+            android:id="@+id/weekly_extract_water_number"
+            android:layout_width="404dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="8dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:text="@string/week_water_number"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:gravity="center_horizontal"
+            app:layout_constraintBottom_toTopOf="@id/month_extract_water"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/weekly_extract_water" />
+
+
+        <TextView
+            android:id="@+id/month_extract_water"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/month_extrat_water"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:gravity="center_horizontal"
+            app:layout_constraintBottom_toTopOf="@id/month_extract_water_number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/weekly_extract_water_number" />
+
+        <TextView
+            android:id="@+id/month_extract_water_number"
+            android:layout_width="404dp"
+            android:layout_height="51dp"
+            android:layout_marginBottom="64dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:text="@string/month_water_number"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:gravity="center_horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/year_extract_water"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.428"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/month_extract_water"/>
+
+        <TextView
+            android:id="@+id/year_extract_water"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/year_extrat_water"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:gravity="center_horizontal"
+            app:layout_constraintBottom_toTopOf="@id/year_extract_water_number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/month_extract_water_number"/>
+
+        <TextView
+            android:id="@+id/year_extract_water_number"
+            android:layout_width="404dp"
+            android:layout_height="51dp"
+            android:layout_marginBottom="16dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:text="@string/year_water_number"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:gravity="center_horizontal"
+            app:layout_constraintBottom_toTopOf="@id/water_per_year"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/year_extract_water_number"/>
+
+        <TextView
+            android:id="@+id/water_per_year"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_marginTop="52dp"
+            android:text="@string/water_per_year"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:gravity="center_horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/year_extract_water_number"
+            app:layout_constraintBottom_toTopOf="@id/water_per_year_number"/>
+
+        <TextView
+            android:id="@+id/water_per_year_number"
+            android:layout_width="404dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="8dp"
+            android:autofillHints=""
+            android:textSize="22sp"
+            android:ems="10"
+            android:text="@string/water_per_year_number"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/water_per_year"
+            app:layout_constraintBottom_toTopOf="@id/gwater_needed"/>
+
+        <TextView
+            android:id="@+id/gwater_needed"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_marginTop="52dp"
+            android:text="@string/remain_gwater"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:gravity="center_horizontal"
+            app:layout_constraintBottom_toTopOf="@id/gwater_needed"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/water_per_year_number"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/gwater_needed_number"
+            android:layout_width="404dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="8dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:text="@string/remain_gwater_number"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toTopOf="@id/water_remain_date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gwater_needed" />
+
+        <TextView
+            android:id="@+id/water_remain_date"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/water_end_date"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gwater_needed_number" />
+
+        <TextView
+            android:id="@+id/water_date_number"
+            android:layout_width="404dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="8dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:text="@string/water_date_number"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.142"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/water_remain_date"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

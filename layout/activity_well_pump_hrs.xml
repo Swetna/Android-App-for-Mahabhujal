@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/waterdrop"
+    tools:context=".WellPumpHrs">
+
+    <EditText
+        android:id="@+id/w_pumphrs_code"
+        android:layout_width="370dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:hint="@string/w_code"
+        android:textColorHint="@color/black"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.117"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/wpump_date_recording"
+        android:layout_width="361dp"
+        android:layout_height="59dp"
+        android:ems="10"
+        android:inputType="date"
+        android:hint="@string/date_record"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.254"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="268dp"
+        android:layout_height="24dp"
+        android:text="@string/well_variation"
+        android:textColorHint="@color/black"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/w_summer"
+        android:layout_width="97dp"
+        android:layout_height="73dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/summer"
+        android:textColorHint="@color/black"
+        android:inputType="numberSigned"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.504" />
+
+    <EditText
+        android:id="@+id/w_monsoon"
+        android:layout_width="105dp"
+        android:layout_height="78dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/monsoon"
+        android:textColorHint="@color/black"
+        android:inputType="numberSigned"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.505" />
+
+    <EditText
+        android:id="@+id/w_winter"
+        android:layout_width="107dp"
+        android:layout_height="72dp"
+        android:ems="10"
+        android:hint="@string/winter"
+        android:textColorHint="@color/black"
+        android:inputType="numberSigned"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.508" />
+
+    <EditText
+        android:id="@+id/well_discharge"
+        android:layout_width="356dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="@string/discharge"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.697"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/well_pumphrs_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.884" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

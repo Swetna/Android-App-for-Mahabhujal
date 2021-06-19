@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/waterdrop"
+    tools:context=".CalculateVolume">
+
+
+    <EditText
+        android:id="@+id/catchment"
+        android:layout_width="264dp"
+        android:layout_height="55dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/catchment"
+        android:inputType="numberSigned"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/unit_catch"
+        android:layout_width="147dp"
+        android:layout_height="52dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/measure"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.497" />
+
+    <EditText
+        android:id="@+id/rain_height"
+        android:layout_width="264dp"
+        android:layout_height="55dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/rain_height"
+        android:inputType="numberSigned"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <EditText
+        android:id="@+id/unit_rain_height"
+        android:layout_width="147dp"
+        android:layout_height="54dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/measure"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.601"
+        tools:ignore="TextFields" />
+
+    <TextView
+        android:id="@+id/water_volume"
+        android:layout_width="264dp"
+        android:layout_height="55dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+        android:hint="@string/water_vol"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.698"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/unit_water_vol"
+        android:layout_width="147dp"
+        android:layout_height="54dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:textSize="20sp"
+        android:hint="@string/measure"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.701"
+        tools:ignore="RtlCompat,TextFields"
+        android:gravity="center_vertical" />
+
+    <Button
+        android:id="@+id/but_calculate_volume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/but_cal_volume"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.89" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="402dp"
+        android:layout_height="219dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.402"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.064"
+        app:srcCompat="@drawable/rooftop" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

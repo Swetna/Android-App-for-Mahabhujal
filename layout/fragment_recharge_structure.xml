@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/watersplash"
+    android:alpha="1"
+    tools:context=".ui.rechargeStructure.rechargeStructureFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:textColor="@color/ic_fingerprint_background"
+            android:text="Add Recharge Structure "
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <Button
+            android:id="@+id/but_recharge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#4B000000"
+            android:textSize="18sp"
+            android:textColor="@color/ic_fingerprint_background"
+            android:text="@string/btn_addrechargestructure" />
+
+        <Button
+            android:id="@+id/cal_volume"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#4B000000"
+            android:textSize="18sp"
+            android:textColor="@color/ic_fingerprint_background"
+            android:text="@string/btn_calculatevolume" />
+
+
+    </LinearLayout>
+</FrameLayout>
